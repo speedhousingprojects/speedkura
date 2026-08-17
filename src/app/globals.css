@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Kura Homes × Codename Hi-Five — Design System
+   ============================================================ */
+
+@layer base {
+  :root {
+    --sienna: #3A1C11;
+    --sienna-light: #5E2B1B;
+    --sienna-dark: #28120C;
+    --alabaster: #F5F3E6;
+    --caramel: #CE793A;
+    --caramel-light: #E59253;
+    --chocolate: #EEE8DE;
+    --noir: #1B1717;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--alabaster);
+    color: var(--noir);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--caramel);
+    color: var(--sienna);
+  }
+
+  /* Never pure white backgrounds per design.md */
+  * { box-sizing: border-box; }
+}
+
+/* ============================================================
+   Scrollbar
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--chocolate); }
+::-webkit-scrollbar-thumb { background: var(--sienna); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--caramel); }
+
+/* ============================================================
+   Utility Classes
+   ============================================================ */
+@layer utilities {
+  /* Dark Sienna gradient scrim for hero/video overlays */
+  .scrim-dark {
+    background: linear-gradient(
+      180deg,
+      rgba(40, 18, 12, 0.25) 0%,
+      rgba(58, 28, 17, 0.7) 60%,
+      rgba(58, 28, 17, 0.92) 100%
+    );
+  }
+
+  .scrim-top {
+    background: linear-gradient(
+      180deg,
+      rgba(40, 18, 12, 0.6) 0%,
+      transparent 100%
+    );
+  }
+
+  /* Section alternating rhythm */
+  .section-light { background-color: var(--alabaster); }
+  .section-cream { background-color: var(--chocolate); }
+  .section-dark  { background-color: var(--sienna); color: var(--alabaster); }
+
+  /* Text utilities */
+  .text-balance { text-wrap: balance; }
+}
+
+/* ============================================================
+   Marquee Animation (Smooth Infinite Scroll)
+   ============================================================ */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================================
+   Fade-in-up animation (scroll reveal)
+   ============================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+
+/* ============================================================
+   Range slider styling (EMI calculator)
+   ============================================================ */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: var(--chocolate);
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--sienna);
+  border: 3px solid var(--alabaster);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(58, 28, 17, 0.3);
+  transition: transform 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: var(--caramel);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--sienna);
+  border: 3px solid var(--alabaster);
+  cursor: pointer;
+}
+
+/* ============================================================
+   Mobile bottom bar padding
+   ============================================================ */
+@media (max-width: 767px) {
+  body { padding-bottom: 64px; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

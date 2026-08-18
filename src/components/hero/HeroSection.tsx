@@ -11,8 +11,8 @@ interface HeroProps {
 
 export default function HeroSection({ onEnquire }: HeroProps) {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col bg-[#3A1C11] text-[#F5F3E6]">
-      {/* Background Video with Rich Gradient Scrim */}
+    <section id="hero" className="relative min-h-screen flex flex-col bg-[#1C0F0A] text-[#F5F3E6]">
+      {/* Background Video with Dual-Layer Directional Cinematic Scrim */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           autoPlay
@@ -24,8 +24,12 @@ export default function HeroSection({ onEnquire }: HeroProps) {
         >
           <source src={ASSETS.videos.hero} type="video/mp4" />
         </video>
-        {/* Lightened Subtle Scrim Overlay for maximum video clarity */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1C0F0A]/90 via-black/25 to-black/35" />
+
+        {/* Directional Left-to-Right Gradient: Deep contrast behind text on left, 100% bright untouched video on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent z-[1]" />
+
+        {/* Soft Vertical Polish: Subtle blend into top nav and bottom ticker */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1C0F0A] via-transparent to-black/35 z-[2]" />
       </div>
 
       {/* Main Content Area */}
@@ -33,32 +37,32 @@ export default function HeroSection({ onEnquire }: HeroProps) {
         <div className="max-w-3xl">
           {/* Location Badge */}
           <div className="mb-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#28120C]/80 border border-[#CE793A]/40 text-[#CE793A] text-xs font-semibold uppercase tracking-wider backdrop-blur-md shadow-sm">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/60 border border-[#CE793A]/50 text-[#CE793A] text-xs font-semibold uppercase tracking-wider backdrop-blur-md shadow-lg">
               <MapPin className="w-3.5 h-3.5" />
-              <span>{HERO.locationBadge}</span>
+              <span className="drop-shadow-sm">{HERO.locationBadge}</span>
             </div>
           </div>
 
-          {/* Unified Codename Hi-Five Logo Lockup */}
+          {/* Unified Codename Hi-Five Logo Lockup with high-contrast text shadow */}
           <div className="mb-6">
             <HiFiveBrandLockup variant="hero" />
           </div>
 
-          {/* Core Question Headline */}
-          <h2 className="font-gumani text-2xl sm:text-3xl lg:text-4xl text-[#F5F3E6] font-normal leading-snug mb-4 text-balance">
+          {/* Core Question Headline with crisp drop shadow */}
+          <h2 className="font-gumani text-2xl sm:text-3xl lg:text-4xl text-white font-normal leading-snug mb-4 text-balance drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)]">
             {HERO.headline}
           </h2>
 
-          {/* Subheadline copy */}
-          <p className="text-[#F5F3E6]/85 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl font-light">
+          {/* Subheadline copy with high readability */}
+          <p className="text-[#F5F3E6] text-sm sm:text-base leading-relaxed mb-8 max-w-2xl font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
             {HERO.subheadline}
           </p>
 
-          {/* Dual CTAs */}
+          {/* Dual CTAs with rich depth */}
           <div className="flex flex-wrap items-center gap-4">
             <a
               href="#why"
-              className="px-6 py-3.5 bg-[#F5F3E6] hover:bg-[#EEE8DE] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2"
+              className="px-6 py-3.5 bg-[#F5F3E6] hover:bg-[#EEE8DE] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 active:scale-95"
             >
               <span>Know More</span>
               <ChevronDown className="w-4 h-4 text-[#3A1C11]" />
@@ -66,27 +70,27 @@ export default function HeroSection({ onEnquire }: HeroProps) {
 
             <button
               onClick={() => onEnquire('Hero CTA')}
-              className="px-7 py-3.5 bg-[#CE793A] hover:bg-[#E59253] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-lg hover:shadow-xl transition-all flex items-center gap-2 group"
+              className="px-7 py-3.5 bg-[#CE793A] hover:bg-[#E59253] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 group active:scale-95 border border-[#CE793A]/50"
             >
               <span>Book a Site Visit</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
 
-          {/* RERA Approval Verification */}
-          <div className="mt-8 flex items-center gap-4 text-xs text-[#F5F3E6]/70">
+          {/* RERA Approval Verification with glass capsule */}
+          <div className="mt-8 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-black/50 border border-white/15 backdrop-blur-md text-xs text-[#F5F3E6] shadow-md">
             <div className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-[#CE793A]" />
-              <span>TG RERA: {BRAND.rera}</span>
+              <span className="font-medium">TG RERA: {BRAND.rera}</span>
             </div>
             <span className="text-[#CE793A]">•</span>
-            <span>HMDA: {BRAND.hmda}</span>
+            <span className="font-medium">HMDA: {BRAND.hmda}</span>
           </div>
         </div>
       </div>
 
       {/* Infinite Scrolling Marquee Ticker */}
-      <div className="relative z-10 bg-[#28120C] border-y border-[#CE793A]/30 py-3.5 overflow-hidden">
+      <div className="relative z-10 bg-[#28120C] border-y border-[#CE793A]/30 py-3.5 overflow-hidden shadow-lg">
         <div className="animate-marquee flex items-center gap-8">
           {[...HERO.ticker, ...HERO.ticker, ...HERO.ticker, ...HERO.ticker].map((item, idx) => (
             <div

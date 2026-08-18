@@ -97,9 +97,9 @@ export default function EnquiryModal({ isOpen, onClose, source = '' }: ModalProp
               <h3 className="font-gumani text-2xl text-[#F5F3E6] leading-tight">
                 Request Pricing & Project Details
               </h3>
-              {source && (
-                <p className="text-[#CE793A]/80 text-xs mt-1 font-light">Enquiry for: {source}</p>
-              )}
+              <p className="font-figtree font-normal text-xs text-[#F5F3E6]/75 mt-1">
+                Get instant brochure, official pricing breakdown & floor plans.
+              </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-3.5">

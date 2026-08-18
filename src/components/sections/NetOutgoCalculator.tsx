@@ -84,7 +84,7 @@ export default function NetOutgoCalculator() {
 
             {/* Note Below Banner */}
             <p className="text-xs text-[#1B1717]/65 leading-relaxed mb-8 font-light">
-              * EMI at {rate.toFixed(2)}% / {tenure} yrs / {formatLakhs(loanAmount)} ≈ {formatInr(computedEmi)}. Rental income ₹20,000–25,000/month is indicative, based on current 2BHK market in Dundigal–Gandimaisamma corridor. Old-regime Section 24(b) deduction is not available under the new (default) tax regime — opt-in required; consult a CA. Not investment advice. T&C Apply.
+              * EMI at {rate.toFixed(2)}% / {tenure} yrs / {formatLakhs(loanAmount)} ≈ {formatInr(computedEmi)}. Rental income ₹18,000–22,000/month is indicative, based on current 2BHK market in Dundigal–Gandimaisamma corridor. Old-regime Section 24(b) deduction is not available under the new (default) tax regime — opt-in required; consult a CA. Not investment advice. T&C Apply.
             </p>
 
             {/* Equation Breakdown Horizontal Key-Value Rows */}

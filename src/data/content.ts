@@ -56,8 +56,8 @@ export const HERO = {
   subheadline:
     'Once you factor in rental income potential and old-regime tax benefits, the monthly outgo on a CODENAME HI FIVE 2BHK can be far lower than the rent you would pay elsewhere. See the calculator below for your specific numbers.',
   ticker: [
-    '₹7,499/sq.ft',
-    'Effective Cost from ~₹18K/month*',
+    '₹4,999/sq.ft',
+    'Effective Cost from ~₹9.8K/month*',
     '25,000 sq.ft Clubhouse',
     '40+ Amenities',
     '3 Reserve Forests',
@@ -119,7 +119,7 @@ export const WHY_SECTION = {
       points: [
         'ORR 3 corridor: ₹9–10K/sq.ft',
         'ORR 6 corridor: ₹8–9K/sq.ft',
-        'ORR 5 · CODENAME HI FIVE: ₹7,499/sq.ft',
+        'ORR 5 · CODENAME HI FIVE: ₹4,999/sq.ft',
         'Pricing as of May 2026 · Source: market listings',
       ],
       icon: 'TrendingUp',
@@ -138,7 +138,7 @@ export const PRICE_CONTEXT = {
     { name: 'ORR 6 Corridor', price: '₹8,000–9,000/sq.ft', highlight: false },
     {
       name: 'ORR 5 · CODENAME HI FIVE',
-      price: '₹7,499/sq.ft ✦',
+      price: '₹4,999/sq.ft ✦',
       highlight: true,
       subtext: 'ORR 5 is in an earlier phase of corridor growth',
     },
@@ -149,51 +149,51 @@ export const PRICE_CONTEXT = {
 export const STARTING_PRICE = {
   startingLabel: 'Starting at',
   configurations: [
-    { bhk: '2 BHK', price: '₹75L', note: 'Smart Luxe Configurations' },
-    { bhk: 'Duplex 3 BHK', price: '₹1.2 Cr', note: 'Penthouse & Duplex' },
+    { bhk: '2 BHK', price: '₹55L', note: 'Smart Luxe (1,100–1,285 sq.ft)' },
+    { bhk: 'Duplex', price: '₹95L', note: 'Penthouse & Duplex (1,850–2,200 sq.ft)' },
   ],
   benefits: [
-    'Just ₹18,000 to begin your ownership journey',
-    'Comfortable EMI with multiple bank options',
+    'Just ₹4,999/sq.ft today · Most accessible price on ORR',
+    'Comfortable EMI with multiple leading bank options',
     'Possession Soon / 90% Constructed',
     'Approved by HMDA & TG RERA',
-    '50% appreciation in 3 years · ₹7,499/sq.ft today',
+    '500+ homes booked · 55 Years of trust by Kura Homes',
   ],
 };
 
 export const NET_OUTGO_CALCULATOR = {
-  title: 'Your ₹75L Home',
-  headline: 'Own a home for less',
+  title: 'Your ₹55L Home',
+  headline: 'Own a 2 BHK for less',
   headlineHighlight: 'than most local rents.',
   description:
     'Once you factor in rental income potential and old-regime tax benefits, the monthly outgo on a CODENAME HI FIVE 2BHK can be far lower than the rent you\'d pay elsewhere — see the two scenarios below.',
   scenarioBHighlight: {
     label: 'Scenario B — Rent-out net outgo',
-    amount: '₹18,384',
-    subtext: 'EMI − ₹20K–25K rental income − ₹12K old-regime Section 24(b) benefit. Assumes opt-in to old tax regime.',
+    amount: '₹9,700',
+    subtext: 'EMI − ₹20K rental income − ₹9.5K old-regime Section 24(b) benefit. Assumes opt-in to old tax regime.',
   },
   formulaBreakdown: [
-    { sign: '=', label: 'Property Value', value: '₹75,00,000' },
-    { sign: '→', label: 'Home Loan', value: '₹65,00,000' },
-    { sign: '=', label: 'Monthly EMI', value: '₹55,384' },
-    { sign: '−', label: 'Rental Income (Scenario B)', value: '₹25,000' },
-    { sign: '−', label: 'Old Regime Section 24(b)', value: '₹12,000' },
-    { sign: '✦', label: 'Net Outgo / Month (Scenario B)', value: '₹18,384', isTotal: true },
+    { sign: '=', label: 'Property Value', value: '₹55,00,000' },
+    { sign: '→', label: 'Home Loan', value: '₹46,00,000' },
+    { sign: '=', label: 'Monthly EMI', value: '₹39,200' },
+    { sign: '−', label: 'Rental Income (Scenario B)', value: '₹20,000' },
+    { sign: '−', label: 'Old Regime Section 24(b)', value: '₹9,500' },
+    { sign: '✦', label: 'Net Outgo / Month (Scenario B)', value: '₹9,700', isTotal: true },
   ],
   defaults: {
-    propertyValue: 7500000,
-    loanAmount: 6500000,
+    propertyValue: 5500000,
+    loanAmount: 4600000,
     rate: 8.25,
     tenure: 20,
-    rentalIncome: 25000,
-    taxBenefit: 12000,
-    localRent: 22000,
+    rentalIncome: 20000,
+    taxBenefit: 9500,
+    localRent: 20000,
   },
   disclaimer:
-    '* EMI at 8.25% / 20 yrs / ₹65L ≈ ₹55,384. Rental income ₹20,000–25,000/month is indicative, based on current 2BHK market in Dundigal–Gandimaisamma corridor. Old-regime Section 24(b) deduction is not available under the new (default) tax regime — opt-in required; consult a CA. Not investment advice. T&C Apply.',
+    '* EMI at 8.25% / 20 yrs / ₹46L ≈ ₹39,200. Rental income ₹18,000–22,000/month is indicative, based on current 2BHK market in Dundigal–Gandimaisamma corridor. Old-regime Section 24(b) deduction is not available under the new (default) tax regime — opt-in required; consult a CA. Not investment advice. T&C Apply.',
   faq: {
     q: 'Why is rental income shown?',
-    a: 'CODENAME HI FIVE\'s location near IT hubs & medical parks means your 2BHK can earn ₹20,000–25,000/month in rental income (indicative; based on current 2BHK market, Dundigal–Gandimaisamma corridor) while you live elsewhere — or when you upgrade to a larger home. Rental income is not guaranteed.',
+    a: 'CODENAME HI FIVE\'s location near IT hubs & medical parks means your 2BHK can earn ₹18,000–22,000/month in rental income (indicative; based on current 2BHK market, Dundigal–Gandimaisamma corridor) while you live elsewhere — or when you upgrade to a larger home. Rental income is not guaranteed.',
   },
 };
 
@@ -354,12 +354,12 @@ export const FLOOR_PLANS_DATA = {
   eyebrow: 'Floor Plans',
   headline: 'Find your',
   headlineHighlight: 'perfect layout.',
-  subheadline: '2 BHK · 3 BHK · Duplex · 1100–2200 sq.ft · ORR Exit-5, Hyderabad',
+  subheadline: '2 BHK & Duplex Homes · 1,100 – 2,200 sq.ft · ORR Exit-5, Hyderabad',
   stats: [
-    { value: '2 & 3', label: 'BHK Options' },
+    { value: '2 BHK & Duplex', label: 'Options' },
     { value: '756', label: 'Total Units' },
     { value: '5', label: 'Blocks A–E' },
-    { value: '₹5,499', label: 'per sq.ft' },
+    { value: '₹4,999', label: 'per sq.ft' },
   ],
   plans: [
     {
@@ -400,7 +400,7 @@ export const FLOOR_PLANS_DATA = {
     },
     {
       id: 'p5',
-      bhk: '3 BHK Duplex',
+      bhk: 'Duplex',
       facing: 'East',
       sqft: '2,200',
       flat: 'Penthouse',

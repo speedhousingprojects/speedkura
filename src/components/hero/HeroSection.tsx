@@ -24,8 +24,8 @@ export default function HeroSection({ onEnquire }: HeroProps) {
         >
           <source src={ASSETS.videos.hero} type="video/mp4" />
         </video>
-        {/* Scrim Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#28120C] via-[#3A1C11]/80 to-[#28120C]/75" />
+        {/* Lightened Subtle Scrim Overlay for maximum video clarity */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1C0F0A]/90 via-black/25 to-black/35" />
       </div>
 
       {/* Main Content Area */}

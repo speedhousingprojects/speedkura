@@ -36,16 +36,16 @@ const figtree = Figtree({
    Metadata
    ============================================================ */
 export const metadata: Metadata = {
-  title: 'CODENAME HI FIVE | 2 & 3 BHK Premium Homes | ORR Exit-5, Bowrampet, Hyderabad | Kura Homes',
+  title: 'CODENAME HI FIVE | 2 BHK & Duplex Premium Homes | ORR Exit-5, Bowrampet, Hyderabad | Kura Homes',
   description:
-    'Ready-to-move 2 & 3 BHK apartments at ORR Exit-5, Bowrampet. 5.3 acres, 70% open space, 25,000 sq.ft clubhouse, 40+ amenities. Starting ₹75 Lakhs. HMDA & TG-RERA approved. By Kura Homes.',
+    'Ready-to-move 2 BHK & Duplex apartments at ORR Exit-5, Bowrampet. Rate ₹4,999/sq.ft. 5.3 acres, 70% open space, 25,000 sq.ft clubhouse, 40+ amenities. Starting ₹55 Lakhs. HMDA & TG-RERA approved. By Kura Homes.',
   keywords: [
     'CODENAME HI FIVE', 'Kura Homes', 'Bowrampet apartments', 'ORR Exit 5',
-    'Gandimaisamma', 'Hyderabad', '2 BHK', '3 BHK', 'ready to move', 'HMDA approved',
+    'Gandimaisamma', 'Hyderabad', '2 BHK', 'Duplex', 'ready to move', 'HMDA approved',
   ],
   openGraph: {
-    title: 'CODENAME HI FIVE | Premium 2 & 3 BHK | Kura Homes',
-    description: 'Ready-to-move gated community at ORR Exit-5, Gandimaisamma. Starting ₹75L.',
+    title: 'CODENAME HI FIVE | Premium 2 BHK & Duplex Homes | Kura Homes',
+    description: 'Ready-to-move gated community at ORR Exit-5, Gandimaisamma. Starting ₹55L at ₹4,999/sq.ft.',
     type: 'website',
     locale: 'en_IN',
     siteName: 'CODENAME HI FIVE',

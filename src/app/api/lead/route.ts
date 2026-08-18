@@ -46,7 +46,7 @@ export async function POST(request: Request) {
       name,
       phone,
       email,
-      requirement: configInterest || '2 BHK / 3 BHK / Duplex',
+      requirement: configInterest || '2 BHK / Duplex',
       source: sourceSection || 'Website CTA',
       pageUrl: pageUrl || 'https://hi-five.kurahomes.in',
       utmSource: utmSource || 'Direct',

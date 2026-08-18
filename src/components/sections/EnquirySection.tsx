@@ -26,7 +26,7 @@ export default function EnquirySection() {
           name,
           phone,
           email,
-          configInterest: requirement || '2 BHK / 3 BHK / Duplex',
+          configInterest: requirement || '2 BHK / Duplex',
           sourceSection: 'Bottom Book Visit Form',
           pageUrl: typeof window !== 'undefined' ? window.location.href : '',
         }),
@@ -188,7 +188,7 @@ export default function EnquirySection() {
                     </label>
                     <input
                       type="text"
-                      placeholder="e.g. 2 BHK / 3 BHK / Duplex, Floor preference, etc."
+                      placeholder="e.g. 2 BHK / Duplex, Floor preference, etc."
                       value={requirement}
                       onChange={(e) => setRequirement(e.target.value)}
                       className="w-full px-4 py-3 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 text-[#F5F3E6] placeholder-[#F5F3E6]/30 text-sm focus:border-[#CE793A] outline-none"

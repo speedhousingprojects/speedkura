@@ -35,7 +35,7 @@ export default function EnquiryModal({ isOpen, onClose, source = '' }: ModalProp
           name: form.name,
           phone: form.phone,
           email: form.email,
-          configInterest: form.requirement || '2 BHK / 3 BHK / Duplex',
+          configInterest: form.requirement || '2 BHK / Duplex',
           sourceSection: `Modal: ${source || 'Website'}`,
           pageUrl: typeof window !== 'undefined' ? window.location.href : '',
         }),
@@ -176,7 +176,7 @@ export default function EnquiryModal({ isOpen, onClose, source = '' }: ModalProp
                   value={form.requirement}
                   onChange={(e) => setForm((f) => ({ ...f, requirement: e.target.value }))}
                   className="w-full px-4 py-3 bg-[#28120C] border border-[#CE793A]/30 rounded-xl text-[#F5F3E6] text-sm placeholder-[#F5F3E6]/30 focus:border-[#CE793A] outline-none transition-all"
-                  placeholder="e.g. 2 BHK / 3 BHK / Duplex, Floor preference, etc."
+                  placeholder="e.g. 2 BHK / Duplex, Floor preference, etc."
                 />
               </div>
 

@@ -59,10 +59,10 @@ export default function HomePage() {
         {/* 3. ORR 5 Price Context: "ORR 5 — in an earlier growth phase" (Corridor Comparison) */}
         <PriceContextSection />
 
-        {/* 4. Starting at ₹75L 2 BHK / ₹1.2 Cr Duplex 3 BHK with 5 Checkmarks */}
+        {/* 4. Starting at ₹55L 2 BHK / ₹95L Duplex with 5 Checkmarks */}
         <StartingPriceSection onEnquire={openEnquiry} />
 
-        {/* 5. Your ₹75L Home: Net Outgo Calculator (Scenario A vs B, Breakdown Table, Sliders) */}
+        {/* 5. Your ₹55L Home: Net Outgo Calculator (Scenario A vs B, Breakdown Table, Sliders) */}
         <NetOutgoCalculator />
 
         {/* 6. In the Spotlight — Location: Where the city breathes easy (5 Stats, Compact Hero View) */}
@@ -77,7 +77,7 @@ export default function HomePage() {
         {/* 9. Watch & Decide (01 Location, 02 Investment, 03 Design) */}
         <WatchAndDecideSection onEnquire={openEnquiry} />
 
-        {/* 10. Floor Plans: 3 BHK / 2 BHK / Duplex with blurred blueprint previews */}
+        {/* 10. Floor Plans: 2 BHK & Duplex with blurred blueprint previews */}
         <FloorPlansSection onEnquire={openEnquiry} />
 
         {/* 11. Construction Progress: 90% Complete. Possession Soon. */}

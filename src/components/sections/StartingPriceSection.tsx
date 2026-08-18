@@ -63,26 +63,26 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
                     <Home className="w-4 h-4 text-[#CE793A] group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="font-gumani text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F5F3E6] leading-none mb-2">
-                    ₹75L
+                    ₹55L*
                   </div>
                   <p className="text-xs text-[#F5F3E6]/65 font-light">
-                    Smart Luxe Configurations
+                    Smart Luxe (1,100–1,285 sq.ft)
                   </p>
                 </div>
 
-                {/* Duplex 3 BHK Card */}
+                {/* Duplex Card */}
                 <div className="bg-[#28120C]/90 border border-[#CE793A]/30 hover:border-[#CE793A] rounded-2xl p-5 sm:p-6 transition-all shadow-md group">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#CE793A]">
-                      Duplex 3 BHK
+                      Duplex
                     </span>
                     <Building className="w-4 h-4 text-[#CE793A] group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="font-gumani text-3xl sm:text-4xl lg:text-5xl font-bold text-[#CE793A] leading-none mb-2">
-                    ₹1.2 Cr
+                    ₹95L*
                   </div>
                   <p className="text-xs text-[#F5F3E6]/65 font-light">
-                    Penthouse & Duplex
+                    Penthouse & Duplex (1,850–2,200 sq.ft)
                   </p>
                 </div>
               </div>

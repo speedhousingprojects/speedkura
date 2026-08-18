@@ -44,7 +44,7 @@ export default function PrivacyPolicyPage() {
               <p>When you interact with our website or submit an enquiry form, we may collect:</p>
               <ul className="list-disc pl-5 space-y-1.5 mt-2">
                 <li><strong>Contact Information:</strong> Full Name, Mobile Phone Number, Email Address.</li>
-                <li><strong>Property Preferences:</strong> Configuration interests (2 BHK, 3 BHK, Duplex), budget preferences, and preferred visit schedules.</li>
+                <li><strong>Property Preferences:</strong> Configuration interests (2 BHK, Duplex), budget preferences, and preferred visit schedules.</li>
                 <li><strong>Technical Data:</strong> IP address, browser type, device information, and referring URL via analytics cookies.</li>
               </ul>
             </section>

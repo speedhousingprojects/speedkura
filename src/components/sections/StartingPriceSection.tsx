@@ -63,7 +63,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
                     <Home className="w-4 h-4 text-[#CE793A] group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="font-gumani text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F5F3E6] leading-none mb-2">
-                    ₹55L*
+                    ₹55L
                   </div>
                   <p className="text-xs text-[#F5F3E6]/65 font-light">
                     Smart Luxe (1,100–1,285 sq.ft)
@@ -79,7 +79,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
                     <Building className="w-4 h-4 text-[#CE793A] group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="font-gumani text-3xl sm:text-4xl lg:text-5xl font-bold text-[#CE793A] leading-none mb-2">
-                    ₹95L*
+                    ₹95L
                   </div>
                   <p className="text-xs text-[#F5F3E6]/65 font-light">
                     Penthouse & Duplex (1,850–2,200 sq.ft)

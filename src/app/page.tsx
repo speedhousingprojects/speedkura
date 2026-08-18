@@ -34,21 +34,13 @@ export default function HomePage() {
     setModalOpen(true);
   }, []);
 
-  // 5-Second Auto Popup with Daily Frequency Capping (Once per calendar day)
+  // 5-Second Auto Popup on every website visit
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    const timer = setTimeout(() => {
+      openEnquiry('Automatic 5s Popup');
+    }, 5000);
 
-    const todayStr = new Date().toISOString().split('T')[0]; // e.g. "2026-08-17"
-    const lastShownDate = localStorage.getItem('hiFive_daily_popup_date');
-
-    if (lastShownDate !== todayStr) {
-      const timer = setTimeout(() => {
-        openEnquiry('Automatic 5s Popup');
-        localStorage.setItem('hiFive_daily_popup_date', todayStr);
-      }, 5000);
-
-      return () => clearTimeout(timer);
-    }
+    return () => clearTimeout(timer);
   }, [openEnquiry]);
 
   return (

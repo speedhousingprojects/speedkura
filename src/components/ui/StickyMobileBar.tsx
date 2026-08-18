@@ -24,14 +24,14 @@ export default function StickyMobileBar({ onEnquire }: StickyMobileBarProps) {
           </span>
         </a>
 
-        {/* Real WhatsApp Action */}
+        {/* Real Official WhatsApp Action */}
         <a
           href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-1.5 text-[#25D366] active:scale-95 transition-all"
         >
-          <WhatsAppIcon className="w-5 h-5 mb-1 fill-[#25D366]" />
+          <WhatsAppIcon className="w-6 h-6 mb-0.5 drop-shadow-md" size={24} />
           <span className="text-[11px] font-bold uppercase tracking-wider text-[#25D366]">
             WhatsApp
           </span>

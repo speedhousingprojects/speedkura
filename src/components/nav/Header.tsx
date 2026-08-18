@@ -113,7 +113,7 @@ export default function Header({ onEnquire }: HeaderProps) {
               rel="noopener noreferrer"
               className="w-full py-3 bg-[#25D366] text-white rounded-xl flex items-center justify-center gap-2 text-sm font-semibold shadow-md"
             >
-              <WhatsAppIcon className="w-4 h-4 fill-white" />
+              <WhatsAppIcon className="w-5 h-5" size={20} />
               <span>WhatsApp Sales</span>
             </a>
           </div>

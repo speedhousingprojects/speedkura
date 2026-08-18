@@ -72,7 +72,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all"
                 aria-label="WhatsApp"
               >
-                <WhatsAppIcon className="w-5 h-5 fill-current" />
+                <WhatsAppIcon className="w-6 h-6" size={24} />
               </a>
             </div>
           </div>

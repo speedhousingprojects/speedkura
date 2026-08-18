@@ -92,7 +92,7 @@ export default function EnquirySection() {
                   rel="noopener noreferrer"
                   className="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#22bf5b] text-white text-sm font-bold flex items-center gap-2 transition-colors shadow-md"
                 >
-                  <WhatsAppIcon className="w-4 h-4 fill-white" />
+                  <WhatsAppIcon className="w-5 h-5" size={20} />
                   <span>WhatsApp us</span>
                 </a>
               </div>

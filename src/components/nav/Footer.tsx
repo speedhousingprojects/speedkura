@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Instagram, Facebook, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import { BRAND, FOOTER_DATA, NAV_LINKS, ASSETS } from '@/data/content';
 import HiFiveBrandLockup from '@/components/ui/HiFiveBrandLockup';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
@@ -22,21 +22,19 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Main Footer Content */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
-          {/* Col 1: Brand Identity & Unified Logos (5 cols) */}
-          <div className="md:col-span-6 lg:col-span-5">
-            <div className="flex flex-wrap items-center gap-6 mb-6">
+      {/* Main Footer Links */}
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
+          {/* Col 1: Brand & Bio */}
+          <div className="md:col-span-5 lg:col-span-4">
+            <div className="flex items-center gap-4 mb-4">
               {/* Kura Homes Logo */}
-              <Link href="/#hero">
-                <img
-                  src={ASSETS.logos.kuraHomes}
-                  alt="Kura Homes"
-                  className="h-10 sm:h-12 w-auto object-contain hover:opacity-90 transition-opacity"
-                />
-              </Link>
-
+              <img
+                src={ASSETS.logos.kuraHomes}
+                alt="Kura Homes"
+                className="h-10 w-auto object-contain brightness-0 invert"
+              />
+              <span className="text-[#CE793A]/40 text-lg font-light">|</span>
               {/* Codename Hi-Five Unified Typography Lockup */}
               <HiFiveBrandLockup variant="footer" />
             </div>
@@ -45,34 +43,17 @@ export default function Footer() {
               CODENAME HI FIVE is a flagship gated community development by Kura Homes, bringing 55 years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
             </p>
 
-            {/* Social Icons with real WhatsApp */}
+            {/* WhatsApp Direct Connect */}
             <div className="flex items-center gap-3">
-              <a
-                href="https://www.instagram.com/kurahomes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center justify-center text-[#F5F3E6]/80 hover:text-[#CE793A] hover:border-[#CE793A] transition-all"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://www.facebook.com/kurahomes/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center justify-center text-[#F5F3E6]/80 hover:text-[#CE793A] hover:border-[#CE793A] transition-all"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
               <a
                 href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all"
-                aria-label="WhatsApp"
+                className="px-4 py-2 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center gap-2 text-xs font-semibold text-[#F5F3E6] hover:border-[#25D366] transition-all"
+                aria-label="WhatsApp Sales"
               >
-                <WhatsAppIcon className="w-6 h-6" size={24} />
+                <WhatsAppIcon className="w-5 h-5" size={20} />
+                <span>Connect on WhatsApp</span>
               </a>
             </div>
           </div>

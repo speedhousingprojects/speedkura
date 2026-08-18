@@ -22,7 +22,7 @@ export default function TermsPage() {
               Terms & Conditions
             </h1>
             <p className="text-xs text-[#1B1717]/60">
-              Last Updated: May 2026 · CODENAME HI-FIVE by Kura Homes
+              Last Updated: May 2026 · CODENAME HI FIVE by Kura Homes
             </p>
           </div>
 

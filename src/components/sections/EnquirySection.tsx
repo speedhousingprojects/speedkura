@@ -87,7 +87,7 @@ export default function EnquirySection() {
                   <span>{BRAND.phone}</span>
                 </a>
                 <a
-                  href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20Codename%20Hi-Five.`}
+                  href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#22bf5b] text-white text-sm font-bold flex items-center gap-2 transition-colors shadow-md"

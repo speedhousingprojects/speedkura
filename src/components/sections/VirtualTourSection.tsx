@@ -28,7 +28,7 @@ export default function VirtualTourSection() {
             <span>Virtual Tour</span>
           </p>
           <h2 className="font-gumani text-3xl sm:text-4xl lg:text-5xl text-[#F5F3E6] leading-tight">
-            Walk through Hi-Five in <span className="italic text-[#CE793A]">360°.</span>
+            Walk through CODENAME HI FIVE in <span className="italic text-[#CE793A]">360°.</span>
           </h2>
         </div>
 

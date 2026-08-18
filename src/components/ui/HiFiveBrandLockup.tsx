@@ -23,9 +23,9 @@ export default function HiFiveBrandLockup({
           <span className="w-7 sm:w-10 h-[1.5px] bg-[#CE793A]" />
         </div>
 
-        {/* Bottom: HI-FIVE text */}
+        {/* Bottom: HI FIVE text */}
         <span className="font-gumani text-2xl sm:text-3xl font-bold tracking-normal text-[#F5F3E6] leading-none text-center whitespace-nowrap">
-          HI-FIVE
+          HI FIVE
         </span>
       </div>
     );
@@ -45,7 +45,7 @@ export default function HiFiveBrandLockup({
 
       {/* Main Dominant Headline */}
       <h1 className="font-gumani text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-[#F5F3E6] leading-none text-center whitespace-nowrap">
-        HI-FIVE
+        HI FIVE
       </h1>
     </div>
   );

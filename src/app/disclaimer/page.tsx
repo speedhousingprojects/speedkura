@@ -33,7 +33,7 @@ export default function DisclaimerPage() {
                 1. Statutory Regulatory Approvals
               </h2>
               <p>
-                <strong>CODENAME HI-FIVE</strong> is developed by Kura Homes and duly approved by the Hyderabad Metropolitan Development Authority (HMDA Permit No: <strong>{BRAND.hmda}</strong>) and registered under Telangana Real Estate Regulatory Authority (TG RERA Registration No: <strong>{BRAND.rera}</strong>). Project details may be independently verified on the official TG RERA portal (<a href="https://rera.telangana.gov.in/" target="_blank" rel="noopener noreferrer" className="text-[#CE793A] underline font-semibold">rera.telangana.gov.in</a>).
+                <strong>CODENAME HI FIVE</strong> is developed by Kura Homes and duly approved by the Hyderabad Metropolitan Development Authority (HMDA Permit No: <strong>{BRAND.hmda}</strong>) and registered under Telangana Real Estate Regulatory Authority (TG RERA Registration No: <strong>{BRAND.rera}</strong>). Project details may be independently verified on the official TG RERA portal (<a href="https://rera.telangana.gov.in/" target="_blank" rel="noopener noreferrer" className="text-[#CE793A] underline font-semibold">rera.telangana.gov.in</a>).
               </p>
             </section>
 

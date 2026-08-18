@@ -26,7 +26,7 @@ export default function StickyMobileBar({ onEnquire }: StickyMobileBarProps) {
 
         {/* Real WhatsApp Action */}
         <a
-          href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI-FIVE.`}
+          href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-1.5 text-[#25D366] active:scale-95 transition-all"

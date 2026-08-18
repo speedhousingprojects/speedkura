@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="text-xs text-[#1B1717]/60">
-              Last Updated: May 2026 · CODENAME HI-FIVE by Kura Homes
+              Last Updated: May 2026 · CODENAME HI FIVE by Kura Homes
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
                 1. Overview & Commitment
               </h2>
               <p>
-                Kura Homes (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website for <strong>CODENAME HI-FIVE</strong> (located at ORR Exit-5, Gandimaisamma / Bowrampet, Hyderabad) or submit your contact details for project enquiries.
+                Kura Homes (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website for <strong>CODENAME HI FIVE</strong> (located at ORR Exit-5, Gandimaisamma / Bowrampet, Hyderabad) or submit your contact details for project enquiries.
               </p>
             </section>
 
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
               <p>We use your information exclusively to:</p>
               <ul className="list-disc pl-5 space-y-1.5 mt-2">
                 <li>Respond to your requested pricing, floor plans, and project brochures.</li>
-                <li>Schedule and coordinate complimentary site visits to CODENAME HI-FIVE.</li>
+                <li>Schedule and coordinate complimentary site visits to CODENAME HI FIVE.</li>
                 <li>Send transactional SMS, WhatsApp updates, or direct sales phone callbacks.</li>
                 <li>Comply with regulatory mandates under TG RERA (Reg: {BRAND.rera}).</li>
               </ul>

@@ -42,7 +42,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-[#F5F3E6]/70 leading-relaxed font-light mb-6 max-w-md">
-              CODENAME HI-FIVE is a flagship gated community development by Kura Homes, bringing 55 years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
+              CODENAME HI FIVE is a flagship gated community development by Kura Homes, bringing 55 years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
             </p>
 
             {/* Social Icons with real WhatsApp */}
@@ -66,7 +66,7 @@ export default function Footer() {
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI-FIVE.`}
+                href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center justify-center text-[#25D366] hover:bg-[#25D366] hover:text-white hover:border-[#25D366] transition-all"

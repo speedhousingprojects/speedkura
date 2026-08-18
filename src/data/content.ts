@@ -25,7 +25,7 @@ export const ASSETS = {
 };
 
 export const BRAND = {
-  name: 'Codename HI-FIVE',
+  name: 'CODENAME HI FIVE',
   developer: 'Kura Homes',
   tagline: '55 Years of Trust',
   rera: 'P02200002810',
@@ -40,7 +40,7 @@ export const BRAND = {
 
 export const NAV_LINKS = [
   { label: 'Home', href: '#hero' },
-  { label: 'Why HI-FIVE', href: '#why' },
+  { label: 'Why CODENAME HI FIVE', href: '#why' },
   { label: 'Price', href: '#price' },
   { label: 'Location', href: '#location' },
   { label: 'Amenities', href: '#amenities' },
@@ -50,11 +50,11 @@ export const NAV_LINKS = [
 
 export const HERO = {
   locationBadge: 'ORR Exit-5, Gandimaisamma, Hyderabad',
-  projectName: 'CODENAME HI-FIVE',
+  projectName: 'CODENAME HI FIVE',
   tagline: 'by Kura Homes',
   headline: 'Looking to own your first home in a high-growth location?',
   subheadline:
-    'Once you factor in rental income potential and old-regime tax benefits, the monthly outgo on a HI-FIVE 2BHK can be far lower than the rent you would pay elsewhere. See the calculator below for your specific numbers.',
+    'Once you factor in rental income potential and old-regime tax benefits, the monthly outgo on a CODENAME HI FIVE 2BHK can be far lower than the rent you would pay elsewhere. See the calculator below for your specific numbers.',
   ticker: [
     '₹7,499/sq.ft',
     'Effective Cost from ~₹18K/month*',
@@ -76,7 +76,7 @@ export const HERO = {
 };
 
 export const WHY_SECTION = {
-  eyebrow: 'Why Codename HI-FIVE',
+  eyebrow: 'Why CODENAME HI FIVE',
   headline: 'Everything you need,',
   headlineHighlight: 'exactly where you need it.',
   cards: [
@@ -119,7 +119,7 @@ export const WHY_SECTION = {
       points: [
         'ORR 3 corridor: ₹9–10K/sq.ft',
         'ORR 6 corridor: ₹8–9K/sq.ft',
-        'ORR 5 · HI-FIVE: ₹7,499/sq.ft',
+        'ORR 5 · CODENAME HI FIVE: ₹7,499/sq.ft',
         'Pricing as of May 2026 · Source: market listings',
       ],
       icon: 'TrendingUp',
@@ -137,7 +137,7 @@ export const PRICE_CONTEXT = {
     { name: 'ORR 3 Corridor', price: '₹9,000–10,000/sq.ft', highlight: false },
     { name: 'ORR 6 Corridor', price: '₹8,000–9,000/sq.ft', highlight: false },
     {
-      name: 'ORR 5 · Codename HI-FIVE',
+      name: 'ORR 5 · CODENAME HI FIVE',
       price: '₹7,499/sq.ft ✦',
       highlight: true,
       subtext: 'ORR 5 is in an earlier phase of corridor growth',
@@ -166,7 +166,7 @@ export const NET_OUTGO_CALCULATOR = {
   headline: 'Own a home for less',
   headlineHighlight: 'than most local rents.',
   description:
-    'Once you factor in rental income potential and old-regime tax benefits, the monthly outgo on a HI-FIVE 2BHK can be far lower than the rent you\'d pay elsewhere — see the two scenarios below.',
+    'Once you factor in rental income potential and old-regime tax benefits, the monthly outgo on a CODENAME HI FIVE 2BHK can be far lower than the rent you\'d pay elsewhere — see the two scenarios below.',
   scenarioBHighlight: {
     label: 'Scenario B — Rent-out net outgo',
     amount: '₹18,384',
@@ -193,7 +193,7 @@ export const NET_OUTGO_CALCULATOR = {
     '* EMI at 8.25% / 20 yrs / ₹65L ≈ ₹55,384. Rental income ₹20,000–25,000/month is indicative, based on current 2BHK market in Dundigal–Gandimaisamma corridor. Old-regime Section 24(b) deduction is not available under the new (default) tax regime — opt-in required; consult a CA. Not investment advice. T&C Apply.',
   faq: {
     q: 'Why is rental income shown?',
-    a: 'HI-FIVE\'s location near IT hubs & medical parks means your 2BHK can earn ₹20,000–25,000/month in rental income (indicative; based on current 2BHK market, Dundigal–Gandimaisamma corridor) while you live elsewhere — or when you upgrade to a larger home. Rental income is not guaranteed.',
+    a: 'CODENAME HI FIVE\'s location near IT hubs & medical parks means your 2BHK can earn ₹20,000–25,000/month in rental income (indicative; based on current 2BHK market, Dundigal–Gandimaisamma corridor) while you live elsewhere — or when you upgrade to a larger home. Rental income is not guaranteed.',
   },
 };
 
@@ -202,7 +202,7 @@ export const LOCATION_PAGE_DATA = {
   headline: 'Where the city',
   headlineHighlight: 'breathes easy.',
   subheadline:
-    'HI-FIVE is at the precise intersection of urban convenience and natural calm — a rare address where your commute is short, your schools are close, and your lungs get fresh air.',
+    'CODENAME HI FIVE is at the precise intersection of urban convenience and natural calm — a rare address where your commute is short, your schools are close, and your lungs get fresh air.',
   quickStats: [
     { value: '1 min', label: 'ORR Exit 5' },
     { value: '25+', label: 'Schools Nearby' },
@@ -453,11 +453,11 @@ export const ENQUIRY_SECTION = {
     { title: 'Complete transparency', desc: 'RERA registered, HMDA approved, all docs ready' },
   ],
   consentText:
-    'By submitting your number, you consent to Kura Homes and its authorised partners contacting you about Codename Hi-Five via call, SMS, WhatsApp, and email. We will only use your details for this purpose.',
+    'By submitting your number, you consent to Kura Homes and its authorised partners contacting you about CODENAME HI FIVE via call, SMS, WhatsApp, and email. We will only use your details for this purpose.',
 };
 
 export const FOOTER_DATA = {
-  callout: '500+ homes booked at Hi-Five. It\'s your turn now.',
+  callout: '500+ homes booked at CODENAME HI FIVE. It\'s your turn now.',
   address: 'Adjacent to ORR Exit No. 5, Bowrampet Road, Dundigal, Gandimaisamma, Hyderabad, Telangana 500043 · A Kura Homes Project',
   hmda: 'G1/DM/2237/BP/2021',
   rera: 'P02200002810',

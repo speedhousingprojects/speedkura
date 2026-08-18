@@ -34,5 +34,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Large raw media files (>100MB exceeds GitHub push limits)
-public/videos/construction-progress.mp4
 Hero Video.mp4

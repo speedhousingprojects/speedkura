@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import { Figtree, Playfair_Display, Gloock } from 'next/font/google';
 import './globals.css';

@@ -5,7 +5,7 @@ import { Lock, ArrowRight, Check, Sparkles } from 'lucide-react';
 import { FLOOR_PLANS_DATA } from '@/data/content';
 
 interface FloorPlansProps {
-  onEnquire: (src: string) => void;
+  onEnquire?: (src: string) => void;
 }
 
 const TWO_PLANS = [
@@ -83,7 +83,7 @@ export default function FloorPlansSection({ onEnquire }: FloorPlansProps) {
 
                 {/* Sample Blurred Architectural Plan Box */}
                 <div
-                  onClick={() => onEnquire(`Unlock Floor Plan: ${plan.bhk}`)}
+                  onClick={() => onEnquire?.(`Unlock Floor Plan: ${plan.bhk}`)}
                   className="relative aspect-[16/11] rounded-2xl bg-[#F5F3E6] border border-[#3A1C11]/15 flex flex-col items-center justify-center p-6 mb-6 cursor-pointer overflow-hidden group-hover:border-[#CE793A] transition-colors shadow-inner"
                 >
                   {/* Blurred Architectural Floor Plan Blueprint Graphics */}
@@ -134,7 +134,7 @@ export default function FloorPlansSection({ onEnquire }: FloorPlansProps) {
 
               {/* Unlock Button */}
               <button
-                onClick={() => onEnquire(`Unlock Floor Plan: ${plan.bhk}`)}
+                onClick={() => onEnquire?.(`Unlock Floor Plan: ${plan.bhk}`)}
                 className="w-full py-3.5 px-4 rounded-xl bg-[#3A1C11] hover:bg-[#28120C] text-[#F5F3E6] text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-md hover:shadow-xl transition-all group/btn border border-[#CE793A]/30"
               >
                 <span>Request {plan.bhk} Floor Plan</span>

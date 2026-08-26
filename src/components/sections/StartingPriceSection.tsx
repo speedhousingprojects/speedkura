@@ -5,7 +5,7 @@ import { Check, ArrowRight, Home, Building, Sparkles } from 'lucide-react';
 import { STARTING_PRICE, ASSETS } from '@/data/content';
 
 interface StartingPriceProps {
-  onEnquire: (src: string) => void;
+  onEnquire?: (src: string) => void;
 }
 
 export default function StartingPriceSection({ onEnquire }: StartingPriceProps) {
@@ -103,7 +103,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
             {/* Primary Action CTA */}
             <div className="pt-2">
               <button
-                onClick={() => onEnquire('Starting Price Section CTA')}
+                onClick={() => onEnquire?.('Starting Price Section CTA')}
                 className="w-full sm:w-auto px-8 sm:px-10 py-4 bg-[#CE793A] hover:bg-[#E59253] text-[#3A1C11] font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-xl hover:shadow-2xl transition-all inline-flex items-center justify-center gap-2 group active:scale-95"
               >
                 <span>Book a Site Visit</span>

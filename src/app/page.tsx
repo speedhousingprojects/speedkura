@@ -29,8 +29,8 @@ export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalSource, setModalSource] = useState('Website CTA');
 
-  const openEnquiry = useCallback((source: string) => {
-    setModalSource(source);
+  const openEnquiry = useCallback((source?: string) => {
+    setModalSource(source || 'Website CTA');
     setModalOpen(true);
   }, []);
 

@@ -5,7 +5,7 @@ import { MapPin, ArrowRight, ShieldCheck, ChevronDown } from 'lucide-react';
 import { ASSETS, BRAND, HERO } from '@/data/content';
 
 interface HeroProps {
-  onEnquire: (src: string) => void;
+  onEnquire?: (src: string) => void;
 }
 
 export default function HeroSection({ onEnquire }: HeroProps) {
@@ -80,7 +80,7 @@ export default function HeroSection({ onEnquire }: HeroProps) {
             </a>
 
             <button
-              onClick={() => onEnquire('Hero CTA')}
+              onClick={() => onEnquire?.('Hero CTA')}
               className="px-7 py-3.5 bg-[#CE793A] hover:bg-[#E59253] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 group active:scale-95 border border-[#CE793A]/50"
             >
               <span>BOOK A SITE VISIT</span>

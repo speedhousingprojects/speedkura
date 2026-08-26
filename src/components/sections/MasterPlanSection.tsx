@@ -5,7 +5,7 @@ import { Layers, ZoomIn } from 'lucide-react';
 import { MASTER_PLAN_DATA, ASSETS } from '@/data/content';
 
 interface MasterPlanProps {
-  onEnquire: (src: string) => void;
+  onEnquire?: (src: string) => void;
 }
 
 export default function MasterPlanSection({ onEnquire }: MasterPlanProps) {
@@ -30,7 +30,7 @@ export default function MasterPlanSection({ onEnquire }: MasterPlanProps) {
           {/* Master Plan Visual */}
           <div className="lg:col-span-7 bg-[#F5F3E6] rounded-3xl p-4 border border-[#3A1C11]/15 shadow-lg overflow-hidden group">
             <div
-              onClick={() => onEnquire('Master Plan Zoom')}
+              onClick={() => onEnquire?.('Master Plan Zoom')}
               className="relative aspect-[16/10] rounded-2xl overflow-hidden cursor-pointer"
             >
               <img
@@ -69,7 +69,7 @@ export default function MasterPlanSection({ onEnquire }: MasterPlanProps) {
             </div>
 
             <button
-              onClick={() => onEnquire('Download Master Plan')}
+              onClick={() => onEnquire?.('Download Master Plan')}
               className="mt-6 w-full py-3 bg-[#3A1C11] hover:bg-[#28120C] text-[#F5F3E6] font-bold text-xs uppercase tracking-wider rounded-xl transition-colors shadow-md"
             >
               Download High-Res Master Plan PDF

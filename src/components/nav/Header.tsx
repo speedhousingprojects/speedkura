@@ -65,7 +65,7 @@ export default function Header({ onEnquire }: HeaderProps) {
 
           {/* Enquire CTA */}
           <button
-            onClick={() => onEnquire('Header CTA')}
+            onClick={() => onEnquire?.('Header CTA')}
             className="px-5 sm:px-6 py-2.5 bg-[#CE793A] hover:bg-[#E59253] text-[#3A1C11] font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-1.5"
           >
             <span>Book Visit</span>

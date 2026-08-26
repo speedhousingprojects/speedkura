@@ -6,7 +6,7 @@ import { BRAND } from '@/data/content';
 import WhatsAppIcon from './WhatsAppIcon';
 
 interface StickyMobileBarProps {
-  onEnquire: (src: string) => void;
+  onEnquire?: (src: string) => void;
 }
 
 export default function StickyMobileBar({ onEnquire }: StickyMobileBarProps) {
@@ -39,7 +39,7 @@ export default function StickyMobileBar({ onEnquire }: StickyMobileBarProps) {
 
         {/* Enquire Now Action */}
         <button
-          onClick={() => onEnquire('Mobile Sticky Bar')}
+          onClick={() => onEnquire?.('Mobile Sticky Bar')}
           className="flex flex-col items-center justify-center py-1.5 text-[#CE793A] active:scale-95 transition-all"
         >
           <CalendarCheck className="w-5 h-5 mb-1 text-[#CE793A]" />

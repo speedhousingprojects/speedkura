@@ -52,7 +52,7 @@ export default function Footer() {
                 className="px-4 py-2 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center gap-2 text-xs font-semibold text-[#F5F3E6] hover:border-[#25D366] transition-all"
                 aria-label="WhatsApp Sales"
               >
-                <WhatsAppIcon className="w-5 h-5" size={20} />
+                <WhatsAppIcon className="w-5 h-5" />
                 <span>Connect on WhatsApp</span>
               </a>
             </div>

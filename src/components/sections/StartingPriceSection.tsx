@@ -81,9 +81,9 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
                   <div className="font-gumani text-3xl sm:text-4xl lg:text-5xl font-bold text-[#CE793A] leading-none mb-2">
                     ₹95L
                   </div>
-                  <p className="text-xs text-[#F5F3E6]/65 font-light">
-                    Penthouse & Duplex (2,200 sq.ft)
-                  </p>
+                  <span className="text-xs text-[#F5F3E6]/65 block mt-1">
+                    Duplex Homes (2,200 sq.ft)
+                  </span>
                 </div>
               </div>
 

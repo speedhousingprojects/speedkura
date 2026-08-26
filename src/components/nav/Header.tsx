@@ -6,7 +6,7 @@ import { ASSETS, BRAND, NAV_LINKS } from '@/data/content';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 
 interface HeaderProps {
-  onEnquire: (src: string) => void;
+  onEnquire?: (src?: string) => void;
 }
 
 export default function Header({ onEnquire }: HeaderProps) {

@@ -9,7 +9,7 @@ import { BRAND } from '@/data/content';
 export default function DisclaimerPage() {
   return (
     <>
-      <Header onEnquire={() => {}} />
+      <Header />
 
       <main className="pt-32 pb-24 bg-[#F5F3E6] text-[#1B1717] min-h-screen">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

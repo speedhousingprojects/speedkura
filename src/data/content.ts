@@ -154,7 +154,7 @@ export const STARTING_PRICE = {
   startingLabel: 'Starting at',
   configurations: [
     { bhk: '2 BHK', price: '₹59L', note: 'Smart Luxe (1,100–1,285 sq.ft)' },
-    { bhk: 'Duplex', price: '₹95L', note: 'Penthouse & Duplex (2,200 sq.ft)' },
+    { bhk: 'Duplex', price: '₹95L', note: 'Duplex Homes (2,200 sq.ft)' },
   ],
   benefits: [
     'Just ₹4,999/sq.ft today · Most accessible price on ORR',

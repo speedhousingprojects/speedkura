@@ -1,15 +1,31 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '@/components/nav/Header';
 import Footer from '@/components/nav/Footer';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
+
+import EnquiryModal from '@/components/ui/EnquiryModal';
+import StickyMobileBar from '@/components/ui/StickyMobileBar';
 import { BRAND } from '@/data/content';
 
 export default function PrivacyPolicyPage() {
+  const [leadModalOpen, setLeadModalOpen] = useState(false);
+  const [leadModalTitle, setLeadModalTitle] = useState('Book Private Site Visit');
+  const [leadModalSubtitle, setLeadModalSubtitle] = useState(
+    'Experience 5.3 acres of luxury, 40+ amenities & 90% built structures at ORR Exit-5.'
+  );
+  const [leadModalSource, setLeadModalSource] = useState('Privacy Policy Page');
+
+  const openEnquiry = (source?: string, title?: string) => {
+    setLeadModalSource(source || 'Privacy Policy Page');
+    if (title) setLeadModalTitle(title);
+    setLeadModalOpen(true);
+  };
+
   return (
     <>
-      <Header />
+      <Header onEnquire={openEnquiry} />
 
       <main className="pt-32 pb-24 bg-[#F5F3E6] text-[#1B1717] min-h-screen">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,7 +109,10 @@ export default function PrivacyPolicyPage() {
       </main>
 
       <Footer />
+      <StickyMobileBar onEnquire={openEnquiry} />
       <FloatingWhatsApp />
+
+      <EnquiryModal isOpen={leadModalOpen} onClose={() => setLeadModalOpen(false)} source={leadModalSource} />
     </>
   );
 }

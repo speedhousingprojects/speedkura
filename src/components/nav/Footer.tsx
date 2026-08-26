@@ -35,18 +35,18 @@ export default function Footer() {
                 className="h-10 w-auto object-contain brightness-0 invert"
               />
               <span className="text-[#CE793A]/40 text-lg font-light">|</span>
-              {/* Codename Hi-Five Unified Typography Lockup */}
+              {/* CODENAME HI-FIVE Brand Lockup */}
               <HiFiveBrandLockup variant="footer" />
             </div>
 
             <p className="text-xs text-[#F5F3E6]/70 leading-relaxed font-light mb-6 max-w-md">
-              This project is a flagship gated community development by Kura Homes, bringing 55 years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
+              CODENAME HI-FIVE is a flagship 5.3-acre gated community development by Kura Homes, bringing 55+ years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
             </p>
 
             {/* WhatsApp Direct Connect */}
             <div className="flex items-center gap-3">
               <a
-                href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20this%20project.`}
+                href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI-FIVE.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center gap-2 text-xs font-semibold text-[#F5F3E6] hover:border-[#25D366] transition-all"
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2: Navigation Links (2 cols) */}
+          {/* Col 2: Navigation Links */}
           <div className="md:col-span-3 lg:col-span-2">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[#CE793A] mb-4">
               Quick Links
@@ -74,10 +74,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 3: Legal Pages (2 cols) */}
+          {/* Col 3: Legal Pages */}
           <div className="md:col-span-3 lg:col-span-2">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[#CE793A] mb-4">
-              Legal
+              Legal & Privacy
             </h4>
             <ul className="space-y-2.5 text-xs text-[#F5F3E6]/75">
               <li>
@@ -98,10 +98,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Col 4: Approvals & RERA (3 cols) */}
+          {/* Col 4: Approvals & RERA */}
           <div className="md:col-span-6 lg:col-span-3">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[#CE793A] mb-4">
-              Approvals
+              Statutory Approvals
             </h4>
             <div className="bg-[#3A1C11] rounded-2xl p-4 border border-[#CE793A]/20 space-y-2.5 mb-4 text-xs">
               <div className="flex items-center justify-between">
@@ -127,7 +127,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Important Disclaimer Section Above Bottom Bar in Unified Color */}
+      {/* Important Disclaimer Section Above Bottom Bar */}
       <div className="border-t border-[#CE793A]/15 bg-[#28120C]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-[11px] text-[#F5F3E6]/60 leading-relaxed font-light">
@@ -136,7 +136,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright Line in Same Unified Dark Sienna Color */}
+      {/* Copyright Line & Direct Legal Links */}
       <div className="border-t border-[#CE793A]/15 py-5 bg-[#28120C] text-center text-xs text-[#F5F3E6]/50">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2">
           <span>© {new Date().getFullYear()} Kura Homes. All rights reserved.</span>

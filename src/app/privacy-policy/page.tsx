@@ -22,7 +22,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="text-xs text-[#1B1717]/60">
-              Last Updated: May 2026 · This project by Kura Homes
+              Last Updated: May 2026 · CODENAME HI-FIVE by Kura Homes
             </p>
           </div>
 
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
                 1. Overview & Commitment
               </h2>
               <p>
-                Kura Homes (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your personal information when you visit our website for <strong>this project</strong> (located at ORR Exit-5, Gandimaisamma / Bowrampet, Hyderabad) or submit your contact details for project enquiries.
+                Kura Homes (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy outlines our practices regarding the collection, use, and disclosure of your information when you access our marketing website for <strong>CODENAME HI-FIVE</strong> (located adjacent to ORR Exit No. 5, Bowrampet Road, Dundigal, Gandimaisamma, Hyderabad, Telangana 500043) or submit your contact details for project enquiries, brochure downloads, or site visit scheduling.
               </p>
             </section>
 
@@ -41,42 +41,51 @@ export default function PrivacyPolicyPage() {
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
                 2. Information We Collect
               </h2>
-              <p>When you interact with our website or submit an enquiry form, we may collect:</p>
+              <p>When you interact with our website, request a cost sheet, or submit an enquiry form, we may collect the following personal information:</p>
               <ul className="list-disc pl-5 space-y-1.5 mt-2">
-                <li><strong>Contact Information:</strong> Full Name, Mobile Phone Number, Email Address.</li>
-                <li><strong>Property Preferences:</strong> Configuration interests (2 BHK, Duplex), budget preferences, and preferred visit schedules.</li>
-                <li><strong>Technical Data:</strong> IP address, browser type, device information, and referring URL via analytics cookies.</li>
+                <li><strong>Contact Information:</strong> Full Name, Mobile Phone Number, and Email Address.</li>
+                <li><strong>Property Preferences:</strong> Configuration interest (2 BHK Smart Luxe or Duplex Suite), budget preferences, and preferred site visit date/time.</li>
+                <li><strong>Technical & Usage Data:</strong> IP address, browser type, operating system, device identifiers, and page interaction metrics collected via web analytics.</li>
               </ul>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                3. Purpose of Processing
+                3. How We Use Your Information
               </h2>
-              <p>We use your information exclusively to:</p>
+              <p>The information we collect is used exclusively for legitimate business and customer service purposes, including to:</p>
               <ul className="list-disc pl-5 space-y-1.5 mt-2">
-                <li>Respond to your requested pricing, floor plans, and project brochures.</li>
-                <li>Schedule and coordinate complimentary site visits to this project.</li>
-                <li>Send transactional SMS, WhatsApp updates, or direct sales phone callbacks.</li>
-                <li>Comply with regulatory mandates under TG RERA (Reg: {BRAND.rera}).</li>
+                <li>Provide accurate pricing, cost breakdowns, and floor plan blueprints for CODENAME HI-FIVE.</li>
+                <li>Coordinate and confirm complimentary on-site private tours and model home walkthroughs.</li>
+                <li>Communicate project milestones, construction updates, and official handover timelines via phone, SMS, WhatsApp, or email.</li>
+                <li>Fulfill statutory compliance requirements under the Telangana Real Estate Regulatory Authority (TG RERA Reg: <strong>{BRAND.rera}</strong>).</li>
               </ul>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                4. Data Protection & Sharing
+                4. Data Protection & Confidentiality
               </h2>
               <p>
-                We do not sell, rent, or trade your personal data to unauthorized third-party marketers. Information is shared only with our dedicated sales and customer relationship team for scheduling visits and providing project documentation.
+                We do not sell, rent, or trade your personal information to third-party marketing companies. Your data is stored securely and accessed strictly by authorized Kura Homes sales advisors, relationship managers, and technical personnel assisting with your property purchase.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                5. Opt-Out & Contact
+                5. Third-Party Analytics & Pixels
               </h2>
               <p>
-                You may opt out of promotional communications at any time by contacting our support desk at <a href={`tel:${BRAND.phone}`} className="text-[#CE793A] font-semibold underline">{BRAND.phone}</a> or messaging our sales team on WhatsApp.
+                We may use industry-standard web analytics tools (such as Google Analytics and Google Ads) to understand traffic patterns and optimize user experience. These tools may use cookies to gather non-personally identifiable technical usage metrics. You can control or disable cookie settings through your browser preferences.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
+                6. Opt-Out & Contact Information
+              </h2>
+              <p>
+                If you wish to update your contact details or opt out of promotional communications, you may reach our customer relations desk directly at <a href={`tel:${BRAND.phone}`} className="text-[#CE793A] font-semibold underline">{BRAND.phone}</a> / <a href={`tel:${BRAND.phoneAlt}`} className="text-[#CE793A] font-semibold underline">{BRAND.phoneAlt}</a> or email us at <a href={`mailto:${BRAND.email}`} className="text-[#CE793A] font-semibold underline">{BRAND.email}</a>.
               </p>
             </section>
           </div>

@@ -22,7 +22,7 @@ export default function TermsPage() {
               Terms & Conditions
             </h1>
             <p className="text-xs text-[#1B1717]/60">
-              Last Updated: May 2026 · This project by Kura Homes
+              Last Updated: May 2026 · CODENAME HI-FIVE by Kura Homes
             </p>
           </div>
 
@@ -33,43 +33,52 @@ export default function TermsPage() {
                 1. Acceptance of Terms
               </h2>
               <p>
-                By accessing or using this website, you agree to comply with and be bound by these Terms & Conditions. If you do not agree to these terms, please do not use this site.
+                By accessing, browsing, or using this website for <strong>CODENAME HI-FIVE</strong>, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions. If you do not agree with any part of these terms, you should refrain from using this website.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                2. Information & Artistic Renders
+                2. Visual Media & Architectural Renders
               </h2>
               <p>
-                The information, visual walkthroughs, renders, architectural perspectives, and layout plans displayed on this website are conceptual and artistic impressions. Actual finished specifications, dimensions, amenities, and landscaping are subject to the registered agreements for sale and approved TG RERA filings ({BRAND.rera}).
+                The imagery, 3D architectural renders, floor plan layouts, video walkthroughs, and elevation designs presented on this website are conceptual impressions designed to provide an illustrative representation of CODENAME HI-FIVE. The final layout, materials, landscape features, specifications, and fixtures are governed strictly by the approved HMDA sanction (Permit: <strong>{BRAND.hmda}</strong>), TG RERA filings (Reg: <strong>{BRAND.rera}</strong>), and the formal Agreement of Sale executed between the buyer and Kura Homes.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                3. Pricing & Availability
+                3. Pricing, Availability & Unit Allocation
               </h2>
               <p>
-                All prices, configurations, payment schedules, and unit availability are subject to change without prior notice at the sole discretion of Kura Homes. Final pricing and allocation are confirmed upon formal booking documentation and execution of the Agreement for Sale.
+                All unit prices, floor premiums, square-footage measurements (1,100–1,285 sq.ft for 2 BHK; 1,850–2,200 sq.ft for Duplex), promotional payment terms, and inventory availability are subject to change without prior notice at the sole discretion of Kura Homes. An official unit reservation is confirmed only upon completion of the booking application, receipt of the booking advance, and execution of the Agreement for Sale.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                4. Intellectual Property
+                4. Intellectual Property Rights
               </h2>
               <p>
-                All logos, typography, visual designs, imagery, project videos, architectural renders, and website source content are the exclusive intellectual property of Kura Homes. Unauthorized reproduction or distribution is strictly prohibited.
+                All brand marks, logos, typography, visual layouts, website copy, architectural renders, project videos, and digital assets associated with CODENAME HI-FIVE and Kura Homes are the exclusive intellectual property of Kura Homes. Any unauthorized reproduction, framing, republication, or distribution without prior written consent is strictly prohibited.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                5. Jurisdiction
+                5. Limitation of Liability
               </h2>
               <p>
-                Any disputes arising from the use of this website or related sales transactions shall be subject to the exclusive jurisdiction of the competent courts in Hyderabad, Telangana, India.
+                Kura Homes and its affiliates make reasonable efforts to maintain accurate and up-to-date information on this website. However, we do not warrant that the website will be uninterrupted or error-free. In no event shall Kura Homes be liable for any direct, indirect, incidental, or consequential damages arising from the use of this website.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
+                6. Governing Law & Jurisdiction
+              </h2>
+              <p>
+                These Terms & Conditions and any disputes or claims arising out of or related to this website or real estate transactions for CODENAME HI-FIVE shall be governed by and construed in accordance with the laws of India, under the exclusive jurisdiction of the competent courts in Hyderabad, Telangana.
               </p>
             </section>
           </div>

@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '@/components/nav/Header';
 import Footer from '@/components/nav/Footer';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp';
-import { BRAND, FOOTER_DATA } from '@/data/content';
+import { BRAND } from '@/data/content';
 
 export default function DisclaimerPage() {
   return (
@@ -30,10 +30,10 @@ export default function DisclaimerPage() {
           <div className="prose prose-stone max-w-none space-y-8 text-sm sm:text-base leading-relaxed text-[#1B1717]/85 font-light">
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                1. Statutory Regulatory Approvals
+                1. Statutory Regulatory Credentials
               </h2>
               <p>
-                <strong>This project</strong> is developed by Kura Homes and duly approved by the Hyderabad Metropolitan Development Authority (HMDA Permit No: <strong>{BRAND.hmda}</strong>) and registered under Telangana Real Estate Regulatory Authority (TG RERA Registration No: <strong>{BRAND.rera}</strong>). Project details may be independently verified on the official TG RERA portal (<a href="https://rera.telangana.gov.in/" target="_blank" rel="noopener noreferrer" className="text-[#CE793A] underline font-semibold">rera.telangana.gov.in</a>).
+                <strong>CODENAME HI-FIVE</strong> is developed by <strong>Kura Homes</strong> and is fully approved by the Hyderabad Metropolitan Development Authority (HMDA Permit No: <strong>{BRAND.hmda}</strong>) and registered under the Telangana Real Estate Regulatory Authority (TG RERA Registration No: <strong>{BRAND.rera}</strong>). Independent verification of all project approvals and quarterly progress filings can be completed directly on the official TG RERA portal at <a href="https://rera.telangana.gov.in/" target="_blank" rel="noopener noreferrer" className="text-[#CE793A] underline font-semibold">rera.telangana.gov.in</a>.
               </p>
             </section>
 
@@ -42,25 +42,34 @@ export default function DisclaimerPage() {
                 2. Illustrative Financial Estimates & Calculators
               </h2>
               <p>
-                All computed costs, monthly outgo calculations, loan EMIs, and interest rates displayed on this website are indicative and provided solely for conceptual illustration. They do not constitute financial, investment, or legal advice, nor do they guarantee capital appreciation. Actual loan eligibility and terms depend on individual borrower profiles and bank guidelines.
+                All computed costs, monthly net outgo projections (e.g. ~₹9.8K/month*), loan EMIs, interest rates, and rental yield estimations displayed on this website are provided solely for conceptual and illustrative purposes. They do not constitute financial, investment, or taxation advice, nor do they represent a guarantee of capital return, rental income, or property appreciation. Actual home loan eligibility, EMIs, and interest rates vary depending on individual borrower profiles, credit ratings, and lending institution policies.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                3. Construction Milestones & Timelines
+                3. Construction Milestones & Handover Schedules
               </h2>
               <p>
-                Construction progress percentages and estimated possession timelines reflect current site status and are cross-referenced with periodic quarterly filings submitted to TG RERA. Final completion schedules remain subject to force majeure and applicable regulatory provisions.
+                References to construction milestones (e.g., 90% completed, possession soon) reflect real on-site progress and are cross-referenced with periodic quarterly filings submitted to TG RERA. Final completion and handover timelines remain subject to regulatory approvals, government clearances, and standard force majeure circumstances.
               </p>
             </section>
 
             <section>
               <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
-                4. Non-Binding Nature
+                4. Non-Binding Marketing Presentation
               </h2>
               <p>
-                This website is intended for informational and marketing purposes only and does not constitute an offer, invitation to offer, or contract of sale. The binding agreement between the buyer and Kura Homes is exclusively governed by the executed Agreement for Sale and registered Sale Deed.
+                This website is intended exclusively for informational and marketing presentation purposes and does not constitute a legal offer, solicitation, or binding contract of sale. The binding agreement between the home buyer and Kura Homes is exclusively governed by the terms set forth in the formally executed Agreement for Sale and registered Sale Deed.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="font-gumani text-xl sm:text-2xl font-bold text-[#3A1C11] mb-3">
+                5. Registered Office & Contact
+              </h2>
+              <p>
+                For official correspondence, title document verification, or project enquiries, please contact the Kura Homes corporate office or visit the on-site sales lounge located at <strong>{BRAND.address}</strong>, or call our sales line at <a href={`tel:${BRAND.phone}`} className="text-[#CE793A] font-semibold underline">{BRAND.phone}</a>.
               </p>
             </section>
           </div>

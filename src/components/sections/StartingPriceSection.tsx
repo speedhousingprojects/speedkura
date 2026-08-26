@@ -16,7 +16,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
         <div className="mb-8 lg:mb-12">
           <p className="text-xs font-bold text-[#CE793A] uppercase tracking-[0.25em] mb-2 flex items-center gap-2">
             <span className="w-6 h-[1.5px] bg-[#CE793A]" />
-            <span>INVEST IN CODENAME HI FIVE</span>
+            <span>INVEST IN THIS PROJECT</span>
           </p>
           <h2 className="font-gumani text-3xl sm:text-4xl lg:text-5xl text-[#3A1C11] leading-tight">
             Premium living, <span className="italic text-[#CE793A]">within reach.</span>
@@ -29,7 +29,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
           <div className="lg:col-span-5 relative min-h-[320px] sm:min-h-[420px] lg:min-h-[620px] w-full overflow-hidden bg-[#28120C]">
             <img
               src={ASSETS.images.startingAt}
-              alt="CODENAME HI FIVE Architecture"
+              alt="This Project Architecture"
               className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
               loading="lazy"
             />
@@ -63,7 +63,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
                     <Home className="w-4 h-4 text-[#CE793A] group-hover:scale-110 transition-transform" />
                   </div>
                   <div className="font-gumani text-3xl sm:text-4xl lg:text-5xl font-bold text-[#F5F3E6] leading-none mb-2">
-                    ₹55L
+                    ₹59L
                   </div>
                   <p className="text-xs text-[#F5F3E6]/65 font-light">
                     Smart Luxe (1,100–1,285 sq.ft)
@@ -82,7 +82,7 @@ export default function StartingPriceSection({ onEnquire }: StartingPriceProps) 
                     ₹95L
                   </div>
                   <p className="text-xs text-[#F5F3E6]/65 font-light">
-                    Penthouse & Duplex (1,850–2,200 sq.ft)
+                    Penthouse & Duplex (2,200 sq.ft)
                   </p>
                 </div>
               </div>

@@ -75,7 +75,7 @@ export default function ConstructionSection() {
           <div className="relative aspect-video rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-[#3A1C11]/15 bg-[#28120C] group">
             <video
               ref={videoRef}
-              src="/videos/construction-progress.mp4"
+              src="/videos/sanarelli_progress_web.mp4"
               poster="/images/Night Aerial.webp"
               preload="metadata"
               controls

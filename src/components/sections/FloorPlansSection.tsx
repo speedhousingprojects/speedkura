@@ -26,7 +26,7 @@ const TWO_PLANS = [
     id: 'plan-duplex',
     bhk: 'Duplex',
     type: 'Penthouse & Duplex Suites',
-    range: '1,850 – 2,200 Sq.Ft',
+    range: '2,200 Sq.Ft',
     features: [
       'Double-height ceiling architectural living',
       'Private terrace deck & panoramic views',

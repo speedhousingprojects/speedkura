@@ -3,7 +3,6 @@
 import React from 'react';
 import { MapPin, ArrowRight, ShieldCheck, ChevronDown } from 'lucide-react';
 import { ASSETS, BRAND, HERO } from '@/data/content';
-import HiFiveBrandLockup from '@/components/ui/HiFiveBrandLockup';
 
 interface HeroProps {
   onEnquire: (src: string) => void;
@@ -25,46 +24,58 @@ export default function HeroSection({ onEnquire }: HeroProps) {
           <source src={ASSETS.videos.hero} type="video/mp4" />
         </video>
 
-        {/* Directional Left-to-Right Gradient: Deep contrast behind text on left, 100% bright untouched video on right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-transparent z-[1]" />
+        {/* Directional Left-to-Right Gradient: Deep contrast behind text on left, bright video visible on right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-transparent z-[1]" />
 
-        {/* Soft Vertical Polish: Subtle blend into top nav and bottom ticker */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1C0F0A] via-transparent to-black/35 z-[2]" />
+        {/* Soft Vertical Polish: Subtle blend into top nav and bottom */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1C0F0A] via-transparent to-black/40 z-[2]" />
       </div>
 
-      {/* Main Content Area */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 pb-12">
-        <div className="max-w-3xl">
-          {/* Location Badge */}
-          <div className="mb-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/60 border border-[#CE793A]/50 text-[#CE793A] text-xs font-semibold uppercase tracking-wider backdrop-blur-md shadow-lg">
-              <MapPin className="w-3.5 h-3.5" />
+      {/* Main Hero Content */}
+      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full pt-32 sm:pt-36 pb-12">
+        <div className="max-w-2xl animate-fadeIn">
+          {/* 1. Location Pill */}
+          <div className="mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/60 border border-[#CE793A]/50 text-[#CE793A] text-xs font-semibold uppercase tracking-wider backdrop-blur-md shadow-lg">
+              <MapPin className="w-3.5 h-3.5 text-[#CE793A]" />
               <span className="drop-shadow-sm">{HERO.locationBadge}</span>
             </div>
           </div>
 
-          {/* Unified Codename Hi-Five Logo Lockup with high-contrast text shadow */}
+          {/* 2. CODENAME HI FIVE Typographic Brand Lockup */}
           <div className="mb-6">
-            <HiFiveBrandLockup variant="hero" />
+            {/* Top: ──────── CODENAME ──────── */}
+            <div className="flex items-center gap-3 sm:gap-4 mb-2 max-w-[340px] sm:max-w-[400px]">
+              <span className="flex-1 h-[1.5px] bg-[#CE793A]" />
+              <span className="font-gumani text-xs sm:text-sm font-bold tracking-[0.3em] uppercase text-[#F5F3E6] whitespace-nowrap">
+                CODENAME
+              </span>
+              <span className="flex-1 h-[1.5px] bg-[#CE793A]" />
+            </div>
+
+            {/* Bottom: HI FIVE */}
+            <h1 className="font-gumani text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-none whitespace-nowrap drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)]">
+              HI FIVE
+            </h1>
           </div>
 
-          {/* Core Question Headline with crisp drop shadow */}
-          <h2 className="font-gumani text-2xl sm:text-3xl lg:text-4xl text-white font-normal leading-snug mb-4 text-balance drop-shadow-[0_3px_12px_rgba(0,0,0,0.9)]">
+          {/* 3. Headline */}
+          <h2 className="font-gumani text-2xl sm:text-3xl lg:text-4xl text-white font-normal leading-tight mb-4 text-balance drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)]">
             {HERO.headline}
           </h2>
 
-          {/* Subheadline copy with high readability */}
-          <p className="text-[#F5F3E6] text-sm sm:text-base leading-relaxed mb-8 max-w-2xl font-normal drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
+          {/* 4. Subheadline Copy */}
+          <p className="text-[#F5F3E6]/90 text-sm sm:text-base leading-relaxed mb-8 max-w-xl font-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)]">
             {HERO.subheadline}
           </p>
 
-          {/* Dual CTAs with rich depth */}
-          <div className="flex flex-wrap items-center gap-4">
+          {/* 5. Dual Action Buttons */}
+          <div className="flex flex-wrap items-center gap-4 mb-8">
             <a
               href="#why"
               className="px-6 py-3.5 bg-[#F5F3E6] hover:bg-[#EEE8DE] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 active:scale-95"
             >
-              <span>Know More</span>
+              <span>KNOW MORE</span>
               <ChevronDown className="w-4 h-4 text-[#3A1C11]" />
             </a>
 
@@ -72,13 +83,13 @@ export default function HeroSection({ onEnquire }: HeroProps) {
               onClick={() => onEnquire('Hero CTA')}
               className="px-7 py-3.5 bg-[#CE793A] hover:bg-[#E59253] text-[#3A1C11] font-bold text-xs uppercase tracking-wider rounded-xl shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 group active:scale-95 border border-[#CE793A]/50"
             >
-              <span>Book a Site Visit</span>
+              <span>BOOK A SITE VISIT</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
 
-          {/* RERA Approval Verification with glass capsule */}
-          <div className="mt-8 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-black/50 border border-white/15 backdrop-blur-md text-xs text-[#F5F3E6] shadow-md">
+          {/* 6. TG RERA & HMDA Badge */}
+          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-black/60 border border-white/15 backdrop-blur-md text-xs text-[#F5F3E6] shadow-md">
             <div className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-[#CE793A]" />
               <span className="font-medium">TG RERA: {BRAND.rera}</span>

@@ -40,13 +40,13 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-[#F5F3E6]/70 leading-relaxed font-light mb-6 max-w-md">
-              CODENAME HI FIVE is a flagship gated community development by Kura Homes, bringing 55 years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
+              This project is a flagship gated community development by Kura Homes, bringing 55 years of trust and craftsmanship to the high-growth ORR Exit-5 corridor in Gandimaisamma / Bowrampet, Hyderabad.
             </p>
 
             {/* WhatsApp Direct Connect */}
             <div className="flex items-center gap-3">
               <a
-                href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
+                href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20this%20project.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-xl bg-[#3A1C11] border border-[#CE793A]/30 flex items-center gap-2 text-xs font-semibold text-[#F5F3E6] hover:border-[#25D366] transition-all"
@@ -131,7 +131,7 @@ export default function Footer() {
       <div className="border-t border-[#CE793A]/15 bg-[#28120C]">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <p className="text-[11px] text-[#F5F3E6]/60 leading-relaxed font-light">
-            <strong className="text-[#CE793A] font-semibold">Important disclaimer:</strong> Computed costs, EMIs, rental projections, and corridor comparisons on this page are indicative and provided for illustration only. They are not financial or investment advice and do not constitute a guarantee of return, appreciation, or rentability. Actual loan terms vary by bank and applicant profile. Tax benefits depend on your chosen tax regime and personal circumstances — consult a qualified CA. All construction-related claims (% complete, possession date) are subject to TG RERA filings: P02200002810. Past corridor price trends are observational and do not guarantee future appreciation. *Effective cost estimate assumes Scenario B (rent-out), old-regime tax opt-in, and indicative rental of ₹25,000/month — individual results will vary.
+            <strong className="text-[#CE793A] font-semibold">Important disclaimer:</strong> Computed costs and loan EMIs on this page are indicative and provided for illustration only. They are not financial or investment advice and do not constitute a guarantee. Actual loan terms vary by bank and applicant profile. All construction-related claims (% complete, possession date) are subject to TG RERA filings: P02200002810.
           </p>
         </div>
       </div>

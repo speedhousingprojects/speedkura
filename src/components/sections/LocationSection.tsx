@@ -10,10 +10,10 @@ interface LocationSectionProps {
 export default function LocationSection({ onEnquire }: LocationSectionProps) {
   const stats = [
     { value: '1 min', label: 'ORR EXIT 5' },
+    { value: '10 min', label: 'BACHUPALLY' },
+    { value: '30 min', label: 'KUKATPALLY' },
+    { value: '35 min', label: 'FINANCIAL DISTRICT' },
     { value: '25+', label: 'SCHOOLS NEARBY' },
-    { value: '3', label: 'RESERVE FORESTS' },
-    { value: '15 min', label: 'IT HUBS' },
-    { value: '50 min', label: 'INT. AIRPORT' },
   ];
 
   return (
@@ -36,7 +36,7 @@ export default function LocationSection({ onEnquire }: LocationSectionProps) {
         {/* 3. Supporting Paragraph */}
         <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
           <p className="text-xs sm:text-sm text-[#1B1717]/80 leading-relaxed font-light">
-            CODENAME HI FIVE brings urban convenience and natural calm together — with ORR, schools, IT hubs and green spaces all within easy reach.
+            This project brings urban convenience and natural calm together — with ORR, Bachupally, Kukatpally, Financial District and schools all within easy reach.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default function LocationSection({ onEnquire }: LocationSectionProps) {
           <div className="h-[200px] sm:h-[260px] lg:h-[300px] w-full overflow-hidden">
             <img
               src={ASSETS.images.locationView}
-              alt="CODENAME HI FIVE Location and Architectural Overview"
+              alt="This Project Location Overview"
               className="w-full h-full object-cover object-center group-hover:scale-[1.02] transition-transform duration-700 ease-out"
               loading="lazy"
             />

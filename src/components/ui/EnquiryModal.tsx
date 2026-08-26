@@ -92,7 +92,7 @@ export default function EnquiryModal({ isOpen, onClose, source = '' }: ModalProp
             <div className="mb-6">
               <div className="flex items-center gap-2 text-[#CE793A] text-[10px] font-bold uppercase tracking-widest mb-1.5">
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Enquire Now · CODENAME HI FIVE</span>
+                <span>Enquire Now · This Project</span>
               </div>
               <h3 className="font-gumani text-2xl text-[#F5F3E6] leading-tight">
                 Request Pricing & Project Details

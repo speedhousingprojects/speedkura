@@ -30,7 +30,7 @@ export default function Header({ onEnquire }: HeaderProps) {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* ================= LEFT: Kura Homes Logo (Enlarged) ================= */}
         <div className="flex items-center">
-          <a href="#hero" className="flex items-center">
+          <a href="/#hero" className="flex items-center">
             <img
               src={ASSETS.logos.kuraHomes}
               alt="Kura Homes"
@@ -108,7 +108,7 @@ export default function Header({ onEnquire }: HeaderProps) {
               <span>Call {BRAND.phone}</span>
             </a>
             <a
-              href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20CODENAME%20HI%20FIVE.`}
+              href={`https://wa.me/${BRAND.whatsapp}?text=Hi%2C%20I%20want%20to%20know%20about%20this%20project.`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3 bg-[#25D366] text-white rounded-xl flex items-center justify-center gap-2 text-sm font-semibold shadow-md"

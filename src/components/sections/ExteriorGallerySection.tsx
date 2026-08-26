@@ -10,7 +10,6 @@ const EXTERIOR_IMAGES = [
   { src: '/images/water body.webp', title: 'Water Body' },
   { src: '/images/club view.webp', title: 'Club View' },
   { src: '/images/Street view.webp', title: 'Street View' },
-  { src: '/images/Side view.webp', title: 'Side View' },
   { src: '/images/swimming pool.webp', title: 'Swimming Pool' },
   { src: '/images/Basket ball court.webp', title: 'Basketball Court' },
   { src: '/images/Childrens Play area.webp', title: "Children's Play Area" },

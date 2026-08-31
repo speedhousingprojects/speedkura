@@ -1,90 +1,82 @@
-import Script from 'next/script';
 import type { Metadata } from 'next';
-import { Figtree, Playfair_Display, Gloock } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
-/* ============================================================
-   Font Configuration — Kura Homes Brand Identity
-   ============================================================
-   • Gumani (Playfair Display / Gloock fallback): Bold, elegant
-     serif for headlines & titles.
-   • Figtree: Clean contemporary sans-serif for UI, subheadlines,
-     and body text (Light, Regular, Medium, Semi-bold, Bold).
-   ============================================================ */
-
-const gloock = Gloock({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-gloock',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-sans',
   display: 'swap',
 });
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
-  variable: '--font-gumani', // maps to font-gumani utility class
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-display',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
 });
 
-const figtree = Figtree({
-  subsets: ['latin'],
-  variable: '--font-figtree',
-  display: 'swap',
-  weight: ['300', '400', '500', '600', '700'],
-});
-
-/* ============================================================
-   Metadata
-   ============================================================ */
 export const metadata: Metadata = {
-  title: 'CODENAME HI FIVE | 2 BHK & Duplex Premium Homes | ORR Exit-5, Bowrampet, Hyderabad | Kura Homes',
-  description:
-    'Ready-to-move 2 BHK & Duplex apartments at ORR Exit-5, Bowrampet. Rate ₹4,999/sq.ft. 5.3 acres, 70% open space, 25,000 sq.ft clubhouse, 40+ amenities. Starting ₹59 Lakhs. HMDA & TG-RERA approved. By Kura Homes.',
-  keywords: [
-    'CODENAME HI FIVE', 'Kura Homes', 'Bowrampet apartments', 'ORR Exit 5',
-    'Gandimaisamma', 'Hyderabad', '2 BHK', 'Duplex', 'ready to move', 'HMDA approved',
-  ],
+  metadataBase: new URL('https://kurahomes.com'),
+  title: 'Codename Hi-Five by Kura Homes | 2 BHK & Duplex Homes from ₹59L at ORR Exit-5, Hyderabad',
+  description: 'Explore Codename Hi-Five by Kura Homes - a premium 5.3-acre gated community adjacent to ORR Exit-5, Hyderabad. Offering luxury 2 BHK & Duplex homes starting from ₹59 Lakhs. 90% constructed, possession soon. HMDA & TG RERA Approved.',
+  keywords: 'Codename Hi-Five, Kura Homes, Gated Community Bowrampet, Flats near ORR Exit 5, 2 BHK Hyderabad, Duplex Bowrampet Dundigal, Gandimaisamma real estate, Kura Homes Hyderabad',
   openGraph: {
-    title: 'CODENAME HI FIVE | Premium 2 BHK & Duplex Homes | Kura Homes',
-    description: 'Ready-to-move gated community at ORR Exit-5, Gandimaisamma. Starting ₹59L at ₹4,999/sq.ft.',
-    type: 'website',
+    title: 'Codename Hi-Five by Kura Homes | Premium Gated Homes from ₹59L',
+    description: 'Discover premium 2 BHK & Duplex homes near ORR Exit-5, Hyderabad. 90% built, 40+ lifestyle amenities, 25K sq.ft clubhouse. By Kura Homes - 55 years of trust.',
+    url: 'https://kurahomes.com/hi-five',
+    siteName: 'Codename Hi-Five by Kura Homes',
+    images: [
+      {
+        url: '/images/Front view.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Codename Hi-Five Architectural Render',
+      },
+    ],
     locale: 'en_IN',
-    siteName: 'CODENAME HI FIVE',
+    type: 'website',
   },
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-    ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-    other: [
-      {
-        rel: 'android-chrome-192x192',
-        url: '/android-chrome-192x192.png',
-      },
-      {
-        rel: 'android-chrome-512x512',
-        url: '/android-chrome-512x512.png',
-      },
-    ],
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
-  manifest: '/site.webmanifest',
-  robots: { index: true, follow: true },
 };
 
-/* ============================================================
-   Root Layout
-   ============================================================ */
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${gloock.variable} ${figtree.variable}`}
+      className={`${inter.variable} ${playfair.variable}`}
     >
-      <body className="font-figtree text-noir bg-alabaster antialiased">
+      <head>
+        {/* Google Tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18408015022"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'AW-18408015022');
+          `}
+        </Script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="bg-alabaster text-obsidian font-sans antialiased selection:bg-bronze selection:text-white">
         {children}
       </body>
     </html>

@@ -196,26 +196,8 @@ export async function POST(request: Request) {
     }
 
     // 3. NestBookings CRM
-    if (NESTBOOKINGS_WEBHOOK_URL) {
-      const nestBookingsPayload = {
-        name: payload.name,
-        phone: payload.phone,
-        source: payload.source,
-        requirement: payload.requirement,
-        homeType: payload.homeType,
-        timeline: payload.timeline,
-        budget: payload.budget,
-        role: payload.role,
-        experience: payload.experience,
-        type: payload.type,
-        targetSheet: payload.targetSheet,
-        date: payload.date,
-        timestamp: payload.timestamp,
-      };
 
-      dispatches.push(
-        (async () => {
-
+    
 const webhookUrl = process.env.NESTBOOKINGS_WEBHOOK_URL;
 const apiToken = process.env.NESTBOOKINGS_API_TOKEN;
 
@@ -241,6 +223,27 @@ console.log('[NESTBOOKINGS DEBUG]', {
     ? apiToken !== apiToken.trim()
     : false,
 });
+
+    
+    if (NESTBOOKINGS_WEBHOOK_URL) {
+      const nestBookingsPayload = {
+        name: payload.name,
+        phone: payload.phone,
+        source: payload.source,
+        requirement: payload.requirement,
+        homeType: payload.homeType,
+        timeline: payload.timeline,
+        budget: payload.budget,
+        role: payload.role,
+        experience: payload.experience,
+        type: payload.type,
+        targetSheet: payload.targetSheet,
+        date: payload.date,
+        timestamp: payload.timestamp,
+      };
+
+      dispatches.push(
+        (async () => {
 
           
           const response = await fetch(

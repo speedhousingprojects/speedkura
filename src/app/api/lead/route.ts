@@ -6,8 +6,8 @@ const DEFAULT_GOOGLE_SHEET_URL =
 const DEFAULT_PRIVYR_URL =
   'https://www.privyr.com/api/v1/incoming-leads/0vZfjMQw/5qFshIIw';
 
-const DEFAULT_NESTBOOKINGS_URL =
-  'https://nestbookings.com'; 
+const NESTBOOKINGS_WEBHOOK_URL =
+  process.env.NESTBOOKINGS_WEBHOOK_URL;
 
 
 export async function POST(request: Request) {
@@ -101,44 +101,58 @@ export async function POST(request: Request) {
       );
     }
 
-    // 3. Forward to NestBookings CRM Webhook (Google Webhook Structure)
-    const nestbookingsWebhook =
-      process.env.NESTBOOKINGS_WEBHOOK_URL ||
-      DEFAULT_NESTBOOKINGS_URL;
 
-    if (nestbookingsWebhook) {
-      const nestbookingsPayload = {
-        lead_id: `web_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
-        user_column_data: [
-          { column_name: 'Full Name', string_value: payload.name },
-          { column_name: 'User Email', string_value: '' }, // Leave blank or add to frontend destructured fields if captured
-          { column_name: 'User Phone', string_value: payload.phone },
-          { 
-            column_name: 'Requirement', 
-            string_value: payload.role 
-              ? `Role: ${payload.role} | Exp: ${payload.experience} | Type: ${payload.type}` 
-              : payload.requirement 
-          }
-        ],
-        google_key: 'nestbookings-auth'
+    // 3. Forward to NestBookings CRM
+    if (NESTBOOKINGS_WEBHOOK_URL) {
+      const nestBookingsPayload = {
+        name: payload.name,
+        phone: payload.phone,
+        source: payload.source,
+        requirement: payload.requirement,
+        homeType: payload.homeType,
+        timeline: payload.timeline,
+        budget: payload.budget,
+        role: payload.role,
+        experience: payload.experience,
+        type: payload.type,
+        targetSheet: payload.targetSheet,
+        date: payload.date,
+        timestamp: payload.timestamp,
       };
 
       dispatches.push(
-        fetch(nestbookingsWebhook, {
+        fetch(NESTBOOKINGS_WEBHOOK_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(nestbookingsPayload),
+          headers: {
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          body: JSON.stringify(nestBookingsPayload),
+          signal: AbortSignal.timeout(10000),
         })
           .then(async (res) => {
-            const data = res.headers.get('content-type')?.includes('application/json') 
-              ? await res.json() 
-              : await res.text();
-            console.log('[NESTBOOKINGS CRM SYNC SUCCESS]:', data);
+            const responseText = await res.text();
+
+            if (!res.ok) {
+              throw new Error(
+                `NestBookings returned HTTP ${res.status}: ${responseText}`
+              );
+            }
+
+            console.log(
+              '[NESTBOOKINGS SYNC SUCCESS]:',
+              res.status,
+              responseText
+            );
           })
-          .catch((err) => console.error('[NESTBOOKINGS CRM SYNC ERROR]:', err))
+          .catch((err) => {
+            console.error('[NESTBOOKINGS SYNC ERROR]:', err);
+          })
       );
     }
 
+
+    
     // CRITICAL FOR VERCEL SERVERLESS: Wait for webhooks to finish BEFORE returning response!
     await Promise.allSettled(dispatches);
 

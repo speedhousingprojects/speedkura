@@ -36,20 +36,22 @@ export async function POST(request: Request) {
         targetSheet = 'Sheet2';
       }
     }
-
-    const payload = {
-      name: name ? String(name).trim() : '',
-      phone: phone ? String(phone).trim() : '',
-      requirement: requirement ? String(requirement).trim() : '',
-      role: roleClean,
-      experience: experience ? String(experience).trim() : '',
-      source: source ? String(source).trim() : 'Website Enquiry',
-      type: isCareer ? 'career' : 'project',
-      targetSheet,
-      date: date ? String(date).trim() : '',
-      timestamp: istTimestamp,
-    };
-
+    
+const payload = {
+  name: name ? String(name).trim() : '',
+  phone: phone ? String(phone).trim() : '',
+  homeType: homeTypeClean,
+  timeline: timelineClean,
+  budget: budgetClean,
+  requirement: finalRequirement,
+  role: roleClean,
+  experience: experience ? String(experience).trim() : '',
+  source: source ? String(source).trim() : 'Website Enquiry',
+  type: isCareer ? 'career' : 'project',
+  targetSheet,
+  date: date ? String(date).trim() : '',
+  timestamp: istTimestamp,
+};
     console.log('[LEAD CAPTURED]:', payload);
 
     const dispatches: Promise<any>[] = [];

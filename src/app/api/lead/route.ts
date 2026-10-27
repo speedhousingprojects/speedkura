@@ -224,6 +224,11 @@ console.log('[NESTBOOKINGS DEBUG]', {
     : false,
 });
 
+    console.log('[NESTBOOKINGS AUTH CHECK]', {
+  urlConfigured: Boolean(NESTBOOKINGS_WEBHOOK_URL),
+  apiTokenConfigured: Boolean(process.env.NESTBOOKINGS_API_TOKEN),
+  authorizationScheme: 'Bearer',
+});
     
     if (NESTBOOKINGS_WEBHOOK_URL) {
       const nestBookingsPayload = {

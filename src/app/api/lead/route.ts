@@ -215,6 +215,34 @@ export async function POST(request: Request) {
 
       dispatches.push(
         (async () => {
+
+const webhookUrl = process.env.NESTBOOKINGS_WEBHOOK_URL;
+const apiToken = process.env.NESTBOOKINGS_API_TOKEN;
+
+let urlHasToken = false;
+let webhookPath = 'invalid-url';
+
+try {
+  if (webhookUrl) {
+    const parsedUrl = new URL(webhookUrl);
+    urlHasToken = parsedUrl.searchParams.has('token');
+    webhookPath = parsedUrl.pathname;
+  }
+} catch {
+  console.error('[NESTBOOKINGS DEBUG] Webhook URL is invalid.');
+}
+
+console.log('[NESTBOOKINGS DEBUG]', {
+  urlConfigured: Boolean(webhookUrl),
+  webhookPath,
+  urlHasToken,
+  apiTokenConfigured: Boolean(apiToken),
+  apiTokenHasWhitespace: apiToken
+    ? apiToken !== apiToken.trim()
+    : false,
+});
+
+          
           const response = await fetch(
             NESTBOOKINGS_WEBHOOK_URL,
             {
